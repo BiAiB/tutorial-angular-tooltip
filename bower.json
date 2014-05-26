@@ -1,0 +1,11 @@
+{
+	"name": "tutorial-contextualhelp",
+	"version": "",
+	"dependencies": {
+		"angular": "",
+		"angular-resource": ""
+	},
+	"devDependencies": {
+	}
+}
+
