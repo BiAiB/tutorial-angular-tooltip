@@ -6,11 +6,6 @@ tutorial-contextualhelp
 2. Install **Grunt** running `npm install -g grunt-cli` 
 3. Install **Bower** running `npm install -g bower`
 
-## Actual steps used
-* sudo npm install -g yo
-* sudo npm install -g generator-ngtailor
-* yo ngtailor
-
 ## Developement
 * Run `grunt dev` to start a static web server and open your browser.
 * Livereload will be automatically active meaning that you can see your modification on the browser without hitting F5.
