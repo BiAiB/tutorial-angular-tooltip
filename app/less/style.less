@@ -7,4 +7,25 @@
 .help {
     vertical-align: super;
     font-size: 70%;
+    position: relative;
+    display: inline-block;
+    
+    .help-contents {
+        display: none;
+    }
+
+    &:hover .help-contents {
+        display: block;
+        position: absolute;
+        
+        width: 150px;
+        padding: 10px;
+        border: 1px solid black;
+        background-color: #FFE;
+        
+        font-size: 10px;
+        color: black;
+    }
 }
+
+
