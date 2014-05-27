@@ -1,13 +1,5 @@
-.box-sizing (@type: border-box) {
-	-webkit-box-sizing: @type;
-	-moz-box-sizing:    @type;
-	box-sizing:         @type;
-}
-.box-shadow (@string) {
-	-webkit-box-shadow: @string;
-	-moz-box-shadow:    @string;
-	box-shadow:         @string;
-}
+/* Those come from http://css-tricks.com/snippets/css/useful-css3-less-mixins/ */
+@import "css-tricks";
 
 .message {
   color : white;
@@ -41,10 +33,15 @@
         padding: 20px;
         border: 1px solid @helpBoxBorderColor;
 		.box-sizing();
-		.box-shadow(2px 2px 6px @helpBoxBorderColor);
 
-        background-color: @helpBoxColor;
-        
+		background-color: @helpBoxColor;
+
+		/* fancyness */
+		.box-shadow(2px 2px 6px @helpBoxBorderColor);
+		.border-radius(3px);
+		.gradient( white, #CDC );
+
+
         font-size: 10px;
         color: black;
     }

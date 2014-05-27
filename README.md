@@ -21,3 +21,8 @@ tutorial-contextualhelp
 * `grunt test:unit` : run karma unit tests and show test coverage in console.
 * `grunt test:e2e` : run karma e2e tests
 * `grunt report` : open complexity report in your browser
+
+## Further work
+* dynamic direction (tail heading West, South, North ... given available space)
+* animation upon appearance
+* trigger on alternate events (click, close on Esc)

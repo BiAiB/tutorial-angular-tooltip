@@ -1,3 +1,4 @@
+/* Those come from http://css-tricks.com/snippets/css/useful-css3-less-mixins/ */
 .message {
   color: white;
   background-color: #27ae60;
@@ -25,10 +26,23 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  background-color: #eeffee;
+  /* fancyness */
   -webkit-box-shadow: 2px 2px 6px #446644;
   -moz-box-shadow: 2px 2px 6px #446644;
   box-shadow: 2px 2px 6px #446644;
-  background-color: #eeffee;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ccddcc));
+  background: -webkit-linear-gradient(top, #ffffff, #ccddcc);
+  background: -moz-linear-gradient(top, #ffffff, #ccddcc);
+  background: -ms-linear-gradient(top, #ffffff, #ccddcc);
+  background: -o-linear-gradient(top, #ffffff, #ccddcc);
   font-size: 10px;
   color: black;
 }
