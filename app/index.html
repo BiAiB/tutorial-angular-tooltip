@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html ng-app="tutorial-contextualhelp">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <title>tutorial-contextualhelp</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>tutorial-contextualhelp</title>
 
-    <!-- build:css css/tutorial-contextualhelp.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <link rel="stylesheet" href="css/app.css"/>
-    <!-- endbuild -->
+	<!-- build:css css/tutorial-contextualhelp.css -->
+	<!-- bower:css -->
+	<!-- endbower -->
+	<link rel="stylesheet" href="css/app.css"/>
+	<!-- endbuild -->
 </head>
 <body>
 
 <section class="message" ng-controller="mainController">
-    L'objet de cette application est de démontrer comment réaliser des bulles d'aide contextuelles apparaissant au survol d'éléments de l'interface. Les contenus de ces aides peuvent être définis 
-    <i>inline
-        <a class="help" title="oui, inline">
-            ?
-            <div class="help-contents">oui, inline</div>
-        </a>
-    </i> ou via des urls vers des 
-    <i>objets distants<a class="help" href="http://fr.wikipedia.org/wiki/XMLHttpRequest">?</a></i>.
+	L'objet de cette application est de démontrer comment réaliser des bulles d'aide contextuelles apparaissant au survol d'éléments de l'interface. Les contenus de ces aides peuvent être définis 
+	<i>inline
+		<a class="help" title="oui, inline">
+			?
+			<div class="help-contents">
+				<div class="tailBorder"></div>
+				<div class="tail"></div>
+				oui, inline
+			</div>
+		</a>
+	</i> ou via des urls vers des 
+	<i>objets distants<a class="help" href="http://fr.wikipedia.org/wiki/XMLHttpRequest">?</a></i>.
 </section>
 
 <!-- build:js js/tutorial-contextualhelp.js -->
