@@ -17,16 +17,9 @@
 <section class="message" ng-controller="mainController">
 	L'objet de cette application est de démontrer comment réaliser des bulles d'aide contextuelles apparaissant au survol d'éléments de l'interface. Les contenus de ces aides peuvent être définis 
 	<i>inline
-		<a class="help" title="oui, inline">
-			?
-			<div class="help-contents">
-				<div class="tailBorder"></div>
-				<div class="tail"></div>
-				oui, inline
-			</div>
-		</a>
+		<a tp-help>oui, inline</a>
 	</i> ou via des urls vers des 
-	<i>objets distants<a class="help" href="http://fr.wikipedia.org/wiki/XMLHttpRequest">?</a></i>.
+	<i>objets distants<a tp-help src="partials/help/demo.html"></a></i>.
 </section>
 
 <!-- build:js js/tutorial-contextualhelp.js -->

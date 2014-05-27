@@ -1,0 +1,13 @@
+<div class="help" ng-mouseenter="toggled = true" ng-mouseleave="toggled = false">
+	?
+	<div ng-show="toggled">
+		<div class="help-contents">
+			<div class="tailBorder"></div>
+			<div class="tail"></div>
+			<!-- Sans lien src, on «translut» -->
+			<div class="innerHelp" ng-show="!src" ng-transclude></div>
+			<!-- Avec lien, on inclut via ng-include -->
+			<div class="innerHelp" ng-if="src && toggled" ng-include=" src "></div>
+		</div>
+	</div>
+</div>
